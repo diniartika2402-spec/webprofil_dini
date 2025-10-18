@@ -2,12 +2,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background: #fff0f6;
-  color: #333;
+  color: #6d6363;
   transition: background 0.3s, color 0.3s;
 }
 header {
   background: linear-gradient(90deg, #ff66b2, #ff99cc);
-  color: white;
+  color: rgb(246, 244, 244);
   padding: 15px;
   position: sticky;
   top: 0;
@@ -15,10 +15,9 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Navbar baru: vertikal (logo di atas, menu di bawah) */
 .navbar {
   display: flex;
-  flex-direction: column;   /* logo di atas, menu di bawah */
+  flex-direction: column;  
   align-items: center;
   text-align: center;
   position: relative;
@@ -46,7 +45,6 @@ header {
   border-bottom: 2px solid white;
 }
 
-/* Tombol dark mode tetap di pojok kanan atas */
 #darkModeBtn {
   position: absolute;
   right: 20px;
@@ -63,7 +61,6 @@ main { padding: 20px; text-align: center; }
 section { display: none; }
 section.active { display: block; }
 
-/* Home */
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -82,7 +79,6 @@ section.active { display: block; }
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Button */
 .btn {
   padding: 10px 25px;
   background: #ff66b2;
@@ -97,7 +93,6 @@ section.active { display: block; }
   background: #ff3385;
 }
 
-/* About - Box dengan rata kanan */
 .about-box {
   background: #ffe6f0;
   padding: 25px;
@@ -118,7 +113,7 @@ section.active { display: block; }
 }
 .about-text {
   max-width: 500px;
-  text-align: right; /* rata kanan */
+  text-align: left;
 }
 .about-text ul {
   list-style: none;
@@ -129,7 +124,6 @@ section.active { display: block; }
   font-size: 15px;
 }
 
-/* Portfolio */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -156,7 +150,6 @@ section.active { display: block; }
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-/* Contact */
 .contact {
   background: #fff5fa;
   padding: 30px;
@@ -186,12 +179,10 @@ footer {
   margin-top: 30px;
 }
 
-/* Dark Mode */
 body.dark { background: #2a2a2a; color: #fff; }
 body.dark header, body.dark footer { background: #4a4a4a; }
 body.dark .card { background: #555; color: white; }
 
-/* Welcome Screen */
 #welcome-screen {
   position: fixed;
   top: 0; left: 0;
@@ -209,7 +200,6 @@ body.dark .card { background: #555; color: white; }
 .welcome-content h1 { font-size: 32px; margin-bottom: 10px; }
 .welcome-content p { font-size: 16px; margin-bottom: 20px; }
 
-/* Slide Animation */
 .slide {
   opacity: 0;
   transform: translateX(50px);
@@ -220,7 +210,6 @@ body.dark .card { background: #555; color: white; }
   transform: translateX(0);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .home { flex-direction: column; text-align: center; }
   .home-text { text-align: center; }
@@ -229,4 +218,3 @@ body.dark .card { background: #555; color: white; }
   .nav-links { position: static; transform: none; margin-top: 10px; }
   #darkModeBtn { position: static; transform: none; }
 }
-
