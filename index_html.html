@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <h1>Hai, Selamat Datang 🌸</h1>
+      <p>Kenalin dulu yuk sebelum masuk ke web pribadiku ✨</p>
+      <button id="startBtn" class="btn">Kenalan Yuk 💕</button>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">🌸 My Profile</h1>
+      <ul class="nav-links">
+        <li><a data-target="home" class="active">Home</a></li>
+        <li><a data-target="about">About Me</a></li>
+        <li><a data-target="portfolio">Portfolio</a></li>
+      </ul>
+      <button id="darkModeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="active home slide">
+      <div class="home-text">
+        <h2>Hai, aku [Nama Kamu] 💕</h2>
+        <p>Aku seorang mahasiswi di Universitas Lampung yang suka belajar teknologi, desain, dan berbagi inspirasi. 
+           Website ini aku buat sebagai portofolio dan ruang cerita kecilku 🌸</p>
+        <button class="btn" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">
+          Lihat Karyaku ✨
+        </button>
+      </div>
+      <img src="img/foto.jpg" alt="Foto Diri" class="profile-img">
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about slide">
+      <img src="img/foto.jpg" alt="Foto Diri">
+      <div class="about-text">
+        <h2>Tentang Aku 🌷</h2>
+        <p>Halo! Namaku [Nama Kamu], mahasiswi <b>Teknologi Pendidikan Informatika</b> di Universitas Lampung.</p>
+        <ul>
+          <li>🎓 <b>Pendidikan:</b> Universitas Lampung</li>
+          <li>💻 <b>Minat:</b> Desain UI/UX, Pemrograman Web, Konten Kreatif</li>
+          <li>⭐ <b>Keahlian:</b> HTML, CSS, JavaScript, Canva, Photoshop</li>
+          <li>🎨 <b>Hobi:</b> Membaca, desain grafis, fotografi</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio & Contact -->
+    <section id="portfolio" class="slide">
+      <h2>Portfolio ✨</h2>
+      <p>Beberapa karya dan project dummy yang pernah aku buat 👇</p>
+      <div class="portfolio-grid">
+        <div class="card">
+          <img src="img/project1.jpg" alt="Project 1">
+          <h3>Desain UI Mobile</h3>
+          <p>Mockup aplikasi mobile untuk sistem absensi mahasiswa.</p>
+        </div>
+        <div class="card">
+          <img src="img/project2.jpg" alt="Project 2">
+          <h3>Website Portfolio</h3>
+          <p>Contoh personal website dengan HTML, CSS, dan JavaScript.</p>
+        </div>
+        <div class="card">
+          <img src="img/project3.jpg" alt="Project 3">
+          <h3>Poster Digital</h3>
+          <p>Desain poster promosi dengan Canva dan Photoshop.</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>Hubungi Aku 💌</h2>
+        <p>Kamu bisa menghubungiku lewat form ini atau via email 📩</p>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Nama" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" placeholder="Tulis pesanmu..." required></textarea>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 by [Nama Kamu]</p>
+  </footer>
+</body>
+</html>
