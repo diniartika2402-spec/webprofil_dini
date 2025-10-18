@@ -6,7 +6,7 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 header {
-  background: linear-gradient(90deg, #ff66b2, #ff99cc);
+  background: linear-gradient(90deg, #f486bd, #ff99cc);
   color: rgb(246, 244, 244);
   padding: 15px;
   position: sticky;
@@ -217,4 +217,48 @@ body.dark .card { background: #555; color: white; }
   .about-text { text-align: center; }
   .nav-links { position: static; transform: none; margin-top: 10px; }
   #darkModeBtn { position: static; transform: none; }
+
+ .social-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social-links h3 {
+  color: #d63384;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.social-box {
+  background: #ffe6f0;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #d63384;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.social-item:hover {
+  color: #ff3385;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 18px;
+}
 }
