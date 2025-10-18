@@ -14,18 +14,26 @@ header {
   z-index: 100;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+/* Navbar - logo tengah, menu kanan */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  position: relative;
+}
+.logo {
+  flex: 1;
+  text-align: center;
 }
 .nav-links {
-  list-style: none;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   gap: 20px;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 .nav-links li a {
   color: white;
@@ -37,13 +45,18 @@ header {
 .nav-links li a:hover, .nav-links li a.active {
   border-bottom: 2px solid white;
 }
-button#darkModeBtn {
+#darkModeBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
   color: white;
 }
+
 main { padding: 20px; text-align: center; }
 section { display: none; }
 section.active { display: block; }
@@ -82,23 +95,29 @@ section.active { display: block; }
   background: #ff3385;
 }
 
-/* About */
-.about {
+/* About - Box dengan rata kanan */
+.about-box {
+  background: #ffe6f0;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  text-align: left;
-  max-width: 900px;
-  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.about img {
+.about-box img {
   width: 180px;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-.about-text { max-width: 500px; }
+.about-text {
+  max-width: 500px;
+  text-align: right; /* rata kanan */
+}
 .about-text ul {
   list-style: none;
   padding: 0;
@@ -203,7 +222,8 @@ body.dark .card { background: #555; color: white; }
 @media (max-width: 768px) {
   .home { flex-direction: column; text-align: center; }
   .home-text { text-align: center; }
-  .about { flex-direction: column; text-align: center; }
+  .about-box { flex-direction: column; text-align: center; }
   .about-text { text-align: center; }
-  .nav-links { flex-wrap: wrap; justify-content: center; }
+  .nav-links { position: static; transform: none; margin-top: 10px; }
+  #darkModeBtn { position: static; transform: none; }
 }
