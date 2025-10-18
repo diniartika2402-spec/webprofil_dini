@@ -15,25 +15,25 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Navbar - logo tengah, menu kanan */
+/* Navbar baru: vertikal (logo di atas, menu di bawah) */
 .navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* logo di atas, menu di bawah */
   align-items: center;
+  text-align: center;
   position: relative;
 }
 .logo {
-  flex: 1;
-  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 .nav-links {
-  position: absolute;
-  right: 80px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   gap: 20px;
   list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  justify-content: center;
 }
 .nav-links li a {
   color: white;
@@ -45,17 +45,19 @@ header {
 .nav-links li a:hover, .nav-links li a.active {
   border-bottom: 2px solid white;
 }
+
+/* Tombol dark mode tetap di pojok kanan atas */
 #darkModeBtn {
   position: absolute;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 15px;
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
   color: white;
 }
+
 
 main { padding: 20px; text-align: center; }
 section { display: none; }
@@ -227,3 +229,4 @@ body.dark .card { background: #555; color: white; }
   .nav-links { position: static; transform: none; margin-top: 10px; }
   #darkModeBtn { position: static; transform: none; }
 }
+
