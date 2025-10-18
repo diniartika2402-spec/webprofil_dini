@@ -1,4 +1,3 @@
-// Navigasi antar section + efek slide
 const navLinks = document.querySelectorAll(".nav-links li a");
 const sections = document.querySelectorAll("main section");
 
@@ -11,22 +10,19 @@ navLinks.forEach(link => {
     const target = document.getElementById(link.dataset.target);
     target.classList.add("active");
 
-    // Efek slide
     target.classList.remove("slide");
-    void target.offsetWidth; // trigger reflow
+    void target.offsetWidth; 
     target.classList.add("slide", "active");
 
     window.scrollTo(0,0);
   });
 });
 
-// Dark Mode Toggle
 const darkBtn = document.getElementById("darkModeBtn");
 darkBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-// Validasi Form
 const form = document.getElementById("contactForm");
 if (form) {
   form.addEventListener("submit", (e) => {
@@ -44,7 +40,6 @@ if (form) {
   });
 }
 
-// Welcome Screen
 const welcomeScreen = document.getElementById("welcome-screen");
 const startBtn = document.getElementById("startBtn");
 if (startBtn) {
