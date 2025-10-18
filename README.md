@@ -1,5 +1,3 @@
-![alt text](?https://github.com/diniartika2402-spec/webprofil_dini/blob/main/foto_1.jpg
-raw=true)
 <!DOCTYPE html>
 <html lang="id">
 <head>
