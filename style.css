@@ -261,4 +261,22 @@ body.dark .card { background: #555; color: white; }
 .icon {
   font-size: 18px;
 }
+.btn-lihat {
+  display: inline-block;
+  background: linear-gradient(135deg, #f48fb1, #f06292);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  box-shadow: 0 3px 8px rgba(240, 98, 146, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-lihat:hover {
+  background: linear-gradient(135deg, #f06292, #ec407a);
+  transform: scale(1.05);
+}
 }
