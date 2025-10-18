@@ -45,16 +45,18 @@
 
     <!-- About Me -->
     <section id="about" class="about slide">
-      <img src="img/foto.jpg" alt="Foto Diri">
-      <div class="about-text">
-        <h2>Tentang Aku 🌷</h2>
-        <p>Halo! Namaku [Nama Kamu], mahasiswi <b>Teknologi Pendidikan Informatika</b> di Universitas Lampung.</p>
-        <ul>
-          <li>🎓 <b>Pendidikan:</b> Universitas Lampung</li>
-          <li>💻 <b>Minat:</b> Desain UI/UX, Pemrograman Web, Konten Kreatif</li>
-          <li>⭐ <b>Keahlian:</b> HTML, CSS, JavaScript, Canva, Photoshop</li>
-          <li>🎨 <b>Hobi:</b> Membaca, desain grafis, fotografi</li>
-        </ul>
+      <div class="about-box">
+        <img src="img/foto.jpg" alt="Foto Diri">
+        <div class="about-text">
+          <h2>Tentang Aku 🌷</h2>
+          <p>Halo! Namaku [Nama Kamu], mahasiswi <b>Teknologi Pendidikan Informatika</b> di Universitas Lampung.</p>
+          <ul>
+            <li>🎓 <b>Pendidikan:</b> Universitas Lampung</li>
+            <li>💻 <b>Minat:</b> Desain UI/UX, Pemrograman Web, Konten Kreatif</li>
+            <li>⭐ <b>Keahlian:</b> HTML, CSS, JavaScript, Canva, Photoshop</li>
+            <li>🎨 <b>Hobi:</b> Membaca, desain grafis, fotografi</li>
+          </ul>
+        </div>
       </div>
     </section>
 
